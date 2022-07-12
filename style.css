@@ -1,0 +1,506 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display:flex;
+    width: 80%;
+    height: 10ch;
+    margin:auto;
+    align-items: center;
+}
+
+footer {
+    font-size: 60%;
+	padding: 0.1em;
+	clear: both;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+	color: #5f5f79;
+	text-align:center;
+	margin: 0.5em;
+}
+
+footer img {
+	width: 20px;
+}
+
+.podnožje{
+    margin-top: 4%;
+}
+
+.logo-container, .nav-links, .košarica{
+    display:flex;
+}
+
+.logo{
+    font-weight: 500;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo2{
+    font-weight: 500;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo-container{
+    flex: 1;
+}
+
+.logo-container2, .nav-links, .košarica{
+    display:flex;
+}
+
+
+
+.logo-container2{
+    flex: 1;
+}
+
+
+nav{
+    flex: 2;
+}
+
+.nav-2{
+    flex: 2;
+}
+
+.nav-links2{
+    justify-content: space-around;
+    list-style: none;
+    display:flex;
+    
+}
+
+.nav-link2{
+    color: #5f5f79;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #5f5f79;
+    font-size: 15px;
+    text-decoration: none;
+}
+.košarica{
+    flex:1;
+    justify-content:flex-end;
+}
+
+.prezentacija{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.uvod{
+    flex: 1;
+}
+
+.uvodni-tekst h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6F6F89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.uvodni-tekst p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.akcija{
+    padding: 50px 0px 0px 0px;
+
+}
+
+.odaberi{
+    border: 2px solid #0be421;
+    background:#0be421;
+    color:white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer; 
+    font-size: 16px;
+}
+
+.odaberi:hover{
+    background-color: #5f5f79;
+    
+}
+
+
+.dodaj{
+    border: 2px solid #0be421;
+    background: #0be421;
+    width: 150px;
+    height: 50px;
+    cursor: pointer; 
+    font-size: 16px;
+    color:white;
+    margin: 30px 0px 0px 60px;
+}
+
+.dodaj:hover{
+    background-color: #5f5f79
+}
+
+.obuhvati{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.obuhvati img{
+    height: 100%;
+    filter: drop-shadow(0px 3px 3px rgb(2, 147, 5));
+    animation: pad 1.5s ease;
+}
+
+.velika-pomrčina{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+
+.srednja-pomrčina{
+    position:absolute;
+    top: 30%;
+    right:30%;
+    z-index: -1;
+    height: 60%;
+    opacity: 0.4;
+}
+
+.mala-pomrčina{
+    position:absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+.velika-pomrčina2{
+    position: absolute;
+    bottom: 5%;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+}
+
+.srednja-pomrčina2{
+    position:absolute;
+    top: 50%;
+    right: 25%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.mala-pomrčina2{
+    position:absolute;
+    top: 100%;
+    right:60%;
+    z-index: -1;
+    height: 100%;
+    opacity: 1;
+}
+
+.akcija2{
+    padding: 30px 0px 0px 0px;
+
+}
+
+.reklama{
+    border: 2px solid #0be421;
+    background:#0be421;
+    color:white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer; 
+    font-size: 16px;
+    position: absolute;
+    
+}
+
+.reklama:hover{
+    background-color: #5f5f79;
+}
+
+#kontakt{
+    margin: 1em;
+}
+
+label {
+	display: block;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 30%;
+    padding: 12px;
+    border: 2px solid #5f5f79;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 80%;
+}
+
+input[type=submit] {
+    display: block;
+	background-color: #0be421;
+    color: white;
+    padding: 8px 10px;
+    border: 2px solid #0be421;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size:80%;
+}
+
+input[type=submit]:hover {
+    background-color: #5f5f79;
+}
+
+
+
+
+
+@keyframes pad {
+    0%  {
+        opacity: 0;
+        transform: translateY(-80px);
+        }
+    100%    {
+        opacity: 1;
+        transform: translateY(0px);
+        }  
+}
+
+@media screen and (max-width: 1024px) {
+    .prezentacija{
+        flex-direction:column;
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+        align-items: center;
+       
+    }
+
+    .logo-container{
+        font-size: 8px;
+        height: 20%;
+        margin-left: auto;
+        padding: 0px 0px 0px 0px;
+    }
+
+    
+
+    .logo-container2{
+        font-size: 8px;
+        margin-left: auto;
+        height: 20%;
+        
+    }
+
+    .slika{
+        margin-left: 22%;
+        width: 20px;
+    }
+
+    .nav-link{
+        font-size: 14px;
+        padding: 0px 0px 0px 5px;
+    }
+
+    .nav-link2{
+        font-size: 12px;
+        padding: 0px 0px 0px 5px;
+    }
+
+    .nav-links{
+        align-items: center;
+    }
+
+    .nav-links2{
+        align-items: center;
+    }
+
+    .košarica{
+        height: 20%;
+        margin-left:auto;
+        padding: 0px 0px 0px 30px;
+    }
+
+    .logo-container, .nav-links, .košarica{
+        margin-top: auto;
+    }
+
+    .logo-container2, .nav-links2, .košarica{
+        margin-top: auto;
+    }
+
+    .uvod{
+        text-align: center;
+    }
+    .uvodni-tekst h1{
+        font-size: 18px;
+        margin-left: 10%;
+        padding: 40px 0px 10px 0px;
+    }
+
+    .uvodni-tekst p{
+        font-size: 15px;
+        margin-left: 10%;
+    }
+
+    .akcija{
+        padding-top: 30px;
+        margin-left: 10%;
+    }
+
+    .dodaj{
+        width:120px;
+        height:40px;
+        font-size: 12px;
+        margin-left: 0%;
+    }
+
+    .obuhvati img{
+        width:130%;
+        margin-left: 10%;
+        padding: 20px 0px 0px 18px;
+        
+    }
+
+    .akcija2{
+        margin-right: 20%;
+        padding: 60px 0px 80px 0px;
+    }
+
+    .reklama{
+        width:120px;
+        height:40px;
+        font-size: 12px;  
+    }
+
+    footer {
+        margin-left: 10%;
+        padding-top: 22%;
+        clear: both;
+    }
+
+
+    footer p{
+        font-size: 8px;
+    }
+
+    footer img {
+        width: 12px;
+    }
+
+    .velika-pomrčina{
+        position: fixed;
+        width: 80%;
+        height: 50%;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+    .mala-pomrčina{
+        position: fixed;
+        opacity: 0.5;
+        width: 100%;
+    }
+
+    .srednja-pomrčina{
+        position: fixed;
+        padding-bottom: 30%;
+        padding-left: 50%;
+        width: 140%;
+        opacity: 0.4;
+    }
+
+    .velika-pomrčina2{
+        position: fixed;
+        width: 80%;
+        height: 50%;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+    .mala-pomrčina2{
+        position: fixed;
+        opacity: 0.5;
+        width: 100%;
+    }
+
+    .srednja-pomrčina2{
+        position: fixed;
+        padding-bottom: 30%;
+        padding-left: 50%;
+        width: 140%;
+        opacity: 0.4;
+    }
+
+
+    .karta{
+        width: 100%;
+    }
+
+    #firstname, #lastname, #email, #country, #subject, #submit, #phonenumber, #adress, #city{
+        width: 100%;
+    }
+
+
+    .podnožje {
+        margin-left: 10%;
+        padding-top: 22%;
+        clear: both;
+    }
+
+
+    .podnožje p{
+        font-size: 8px;
+    }
+
+    .podnožje img {
+        width: 12px;
+    }
+
+} 
+  
+    
